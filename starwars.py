@@ -41,10 +41,10 @@ class Character(Base):
         users = relationship(User)
      
     class Favorites(Base):
-    __tablename__ = 'Favorites'
-    id = Column(Integer, primary_key=True)
-    character_name = Column(String(250), nullable=True)
-    planet_name = Column(String(250), nullable=True)
+       __tablename__ = 'Favorites'
+       id = Column(Integer, primary_key=True)
+       character_name = Column(String(250), nullable=True)
+       gplanet_name = Column(String(250), nullable=True)
     
 
 
